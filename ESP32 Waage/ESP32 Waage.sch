@@ -1,0 +1,242 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "ESP32 Stockwaage"
+Date "2020-04-10"
+Rev ""
+Comp "Markus"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ESP32~Waage:HX711Socket U3
+U 1 1 5E9A185C
+P 5800 4850
+F 0 "U3" H 5800 5415 50  0000 C CNN
+F 1 "HX711Socket" H 5800 5324 50  0000 C CNN
+F 2 "" V 5800 4800 50  0001 C CNN
+F 3 "" V 5800 4800 50  0001 C CNN
+	1    5800 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L ESP32~Waage:BME280Socket U1
+U 1 1 5E9AD160
+P 3550 3750
+F 0 "U1" H 3408 4525 50  0000 C CNN
+F 1 "BME280Socket" H 3408 4434 50  0000 C CNN
+F 2 "" H 3550 3750 50  0001 C CNN
+F 3 "" H 3550 3750 50  0001 C CNN
+	1    3550 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Reed SW1
+U 1 1 5E9AE918
+P 3250 1850
+F 0 "SW1" V 3204 1935 50  0000 L CNN
+F 1 "SW_Reed" V 3295 1935 50  0000 L CNN
+F 2 "" H 3250 1850 50  0001 C CNN
+F 3 "~" H 3250 1850 50  0001 C CNN
+	1    3250 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 5E9AEF4B
+P 7900 850
+F 0 "#PWR01" H 7900 700 50  0001 C CNN
+F 1 "+5V" H 7915 1023 50  0000 C CNN
+F 2 "" H 7900 850 50  0001 C CNN
+F 3 "" H 7900 850 50  0001 C CNN
+	1    7900 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5E9AFCD1
+P 7900 6050
+F 0 "#PWR02" H 7900 5800 50  0001 C CNN
+F 1 "GND" H 7905 5877 50  0000 C CNN
+F 2 "" H 7900 6050 50  0001 C CNN
+F 3 "" H 7900 6050 50  0001 C CNN
+	1    7900 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L ESP32~Waage:ESP32WROVERSocket U2
+U 1 1 5E982BFB
+P 5550 1850
+F 0 "U2" V 5600 2000 50  0000 R CNN
+F 1 "ESP32WROVERSocket" V 5400 2250 50  0000 R CNN
+F 2 "" H 5550 1850 50  0001 C CNN
+F 3 "" H 5550 1850 50  0001 C CNN
+	1    5550 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ESP32~Waage:SupplSpringTerm U4
+U 1 1 5E9C944D
+P 7900 3100
+F 0 "U4" H 7532 3069 50  0000 R CNN
+F 1 "SupplSpringTerm" H 7532 3160 50  0000 R CNN
+F 2 "" H 7900 3100 50  0001 C CNN
+F 3 "" H 7900 3100 50  0001 C CNN
+	1    7900 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L ESP32~Waage:HX711SpringTerm U6
+U 1 1 5E9C9F52
+P 7900 4900
+F 0 "U6" H 7532 4961 50  0000 R CNN
+F 1 "HX711SpringTerm" H 7532 4870 50  0000 R CNN
+F 2 "" H 7850 4900 50  0001 C CNN
+F 3 "" H 7850 4900 50  0001 C CNN
+	1    7900 4900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L ESP32~Waage:DS18B20SpringTerm U5
+U 1 1 5E9CAE31
+P 7900 3800
+F 0 "U5" H 7481 3861 50  0000 R CNN
+F 1 "DS18B20SpringTerm" H 7481 3770 50  0000 R CNN
+F 2 "" H 7900 3800 50  0001 C CNN
+F 3 "" H 7900 3800 50  0001 C CNN
+	1    7900 3800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 4600 7900 4600
+Wire Wire Line
+	7900 4700 6600 4700
+Wire Wire Line
+	6600 4800 7900 4800
+Wire Wire Line
+	7900 4900 6600 4900
+Wire Wire Line
+	6600 5000 7900 5000
+Wire Wire Line
+	7900 5100 6600 5100
+Wire Wire Line
+	7900 950  6200 950 
+Wire Wire Line
+	6200 950  6200 1250
+Wire Wire Line
+	7900 850  7900 950 
+Connection ~ 7900 950 
+Wire Wire Line
+	7900 6050 7900 5200
+Wire Wire Line
+	7900 3900 7900 4200
+Wire Wire Line
+	7900 4200 9200 4200
+Wire Wire Line
+	9200 4200 9200 6050
+Wire Wire Line
+	9200 6050 7900 6050
+Connection ~ 7900 6050
+Wire Wire Line
+	7900 3150 7900 3300
+Wire Wire Line
+	7900 3300 9200 3300
+Wire Wire Line
+	9200 3300 9200 4200
+Connection ~ 9200 4200
+Wire Wire Line
+	4950 5000 4950 6050
+Wire Wire Line
+	4950 6050 7900 6050
+Wire Wire Line
+	3700 3600 4000 3600
+Wire Wire Line
+	4000 3600 4000 6050
+Wire Wire Line
+	4000 6050 4950 6050
+Connection ~ 4950 6050
+Wire Wire Line
+	7900 950  7900 3050
+Wire Wire Line
+	6200 2450 6200 2550
+Wire Wire Line
+	3700 3700 3850 3700
+Wire Wire Line
+	3850 3700 3850 950 
+Wire Wire Line
+	3850 950  4900 950 
+Wire Wire Line
+	4900 950  4900 1250
+Wire Wire Line
+	4800 1250 4800 1100
+Wire Wire Line
+	4800 1100 5900 1100
+Wire Wire Line
+	5900 1100 5900 1250
+Wire Wire Line
+	5900 1100 7200 1100
+Wire Wire Line
+	7200 1100 7200 2550
+Wire Wire Line
+	7200 2550 6200 2550
+Connection ~ 5900 1100
+Wire Wire Line
+	3250 1650 3250 1100
+Wire Wire Line
+	3250 1100 4800 1100
+Connection ~ 4800 1100
+Wire Wire Line
+	3250 2050 3250 2450
+Wire Wire Line
+	3250 2450 4800 2450
+Wire Wire Line
+	5300 2450 5300 3400
+Wire Wire Line
+	5300 3400 3700 3400
+Wire Wire Line
+	3700 3500 5400 3500
+Wire Wire Line
+	5400 3500 5400 2450
+Wire Wire Line
+	3850 3700 7900 3700
+Connection ~ 3850 3700
+Wire Wire Line
+	7900 3900 7200 3900
+Wire Wire Line
+	7200 3900 7200 2550
+Connection ~ 7900 3900
+Connection ~ 7200 2550
+Wire Wire Line
+	7900 3800 6100 3800
+Wire Wire Line
+	6100 3800 6100 2450
+NoConn ~ 3700 3300
+NoConn ~ 3700 3200
+NoConn ~ 6100 1250
+NoConn ~ 6000 1250
+NoConn ~ 5800 1250
+NoConn ~ 5700 1250
+NoConn ~ 5600 1250
+NoConn ~ 5500 1250
+NoConn ~ 5400 1250
+NoConn ~ 5300 1250
+NoConn ~ 5200 1250
+NoConn ~ 5100 1250
+NoConn ~ 5000 1250
+NoConn ~ 4900 2450
+NoConn ~ 5000 2450
+NoConn ~ 5100 2450
+NoConn ~ 5200 2450
+NoConn ~ 5500 2450
+NoConn ~ 5600 2450
+NoConn ~ 5700 2450
+NoConn ~ 5800 2450
+NoConn ~ 5900 2450
+NoConn ~ 6000 2450
+NoConn ~ 2250 5850
+$EndSCHEMATC
