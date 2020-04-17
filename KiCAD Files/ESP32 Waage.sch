@@ -14,736 +14,688 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ESP32~Waage:HX711Socket U3
+L ESP32~Waage:HX711Socket U4
 U 1 1 5E9A185C
-P 5800 5400
-F 0 "U3" H 5800 5965 50  0000 C CNN
-F 1 "HX711Socket" H 5800 5874 50  0000 C CNN
-F 2 "ESP32 Waage:HX711_Socket" V 5800 5350 50  0001 C CNN
-F 3 "" V 5800 5350 50  0001 C CNN
-	1    5800 5400
-	1    0    0    -1  
+P 3550 3500
+F 0 "U4" V 3450 3500 50  0000 C CNN
+F 1 "HX711Socket" V 3350 3500 50  0000 C CNN
+F 2 "ESP32 Waage:HX711_Socket" V 3550 3450 50  0001 C CNN
+F 3 "" V 3550 3450 50  0001 C CNN
+	1    3550 3500
+	0    1    1    0   
 $EndComp
 $Comp
-L ESP32~Waage:BME280Socket U1
+L ESP32~Waage:BME280Socket U5
 U 1 1 5E9AD160
-P 1900 4300
-F 0 "U1" H 1758 5075 50  0000 C CNN
-F 1 "BME280Socket" H 1758 4984 50  0000 C CNN
-F 2 "ESP32 Waage:BME280_Socket" H 1900 4300 50  0001 C CNN
-F 3 "" H 1900 4300 50  0001 C CNN
-	1    1900 4300
-	1    0    0    -1  
+P 6300 3650
+F 0 "U5" H 6158 4425 50  0000 C CNN
+F 1 "BME280Socket" H 6158 4334 50  0000 C CNN
+F 2 "ESP32 Waage:BME280_Socket" H 6300 3650 50  0001 C CNN
+F 3 "" H 6300 3650 50  0001 C CNN
+	1    6300 3650
+	0    1    1    0   
 $EndComp
 $Comp
 L power:+5V #PWR01
 U 1 1 5E9AEF4B
-P 7800 1800
-F 0 "#PWR01" H 7800 1650 50  0001 C CNN
-F 1 "+5V" H 7815 1973 50  0000 C CNN
-F 2 "" H 7800 1800 50  0001 C CNN
-F 3 "" H 7800 1800 50  0001 C CNN
-	1    7800 1800
+P 4000 1050
+F 0 "#PWR01" H 4000 900 50  0001 C CNN
+F 1 "+5V" H 4015 1223 50  0000 C CNN
+F 2 "" H 4000 1050 50  0001 C CNN
+F 3 "" H 4000 1050 50  0001 C CNN
+	1    4000 1050
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR02
 U 1 1 5E9AFCD1
-P 7900 6150
-F 0 "#PWR02" H 7900 5900 50  0001 C CNN
-F 1 "GND" H 7905 5977 50  0000 C CNN
-F 2 "" H 7900 6150 50  0001 C CNN
-F 3 "" H 7900 6150 50  0001 C CNN
-	1    7900 6150
+P 6550 1350
+F 0 "#PWR02" H 6550 1100 50  0001 C CNN
+F 1 "GND" H 6555 1177 50  0000 C CNN
+F 2 "" H 6550 1350 50  0001 C CNN
+F 3 "" H 6550 1350 50  0001 C CNN
+	1    6550 1350
 	1    0    0    -1  
 $EndComp
 $Comp
-L ESP32~Waage:ESP32WROVERSocket U2
+L ESP32~Waage:SupplSpringTerm U1
+U 1 1 5E9C944D
+P 7350 1100
+F 0 "U1" H 6982 1069 50  0000 R CNN
+F 1 "SupplSpringTerm" H 6982 1160 50  0000 R CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-2_1x02_P2.54mm_Horizontal" H 7350 1100 50  0001 C CNN
+F 3 "" H 7350 1100 50  0001 C CNN
+	1    7350 1100
+	-1   0    0    1   
+$EndComp
+$Comp
+L ESP32~Waage:HX711SpringTerm U6
+U 1 1 5E9C9F52
+P 3500 4500
+F 0 "U6" V 2950 4550 50  0000 R CNN
+F 1 "HX711SpringTerm" V 3050 4800 50  0000 R CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-7_1x07_P2.54mm_Horizontal" H 3450 4500 50  0001 C CNN
+F 3 "" H 3450 4500 50  0001 C CNN
+	1    3500 4500
+	0    1    -1   0   
+$EndComp
+$Comp
+L ESP32~Waage:DS18B20SpringTerm U7
+U 1 1 5E9CAE31
+P 5050 4850
+F 0 "U7" V 4450 4900 50  0000 R CNN
+F 1 "DS18B20SpringTerm" V 4550 5100 50  0000 R CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-3_1x03_P2.54mm_Horizontal" H 5050 4850 50  0001 C CNN
+F 3 "" H 5050 4850 50  0001 C CNN
+	1    5050 4850
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5E9376D9
+P 6550 1200
+F 0 "C2" H 6665 1246 50  0000 L CNN
+F 1 "47uF" H 6665 1155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6588 1050 50  0001 C CNN
+F 3 "~" H 6550 1200 50  0001 C CNN
+	1    6550 1200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5E93A593
+P 6900 4600
+F 0 "R3" H 6970 4646 50  0000 L CNN
+F 1 "4k7" H 6970 4555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6830 4600 50  0001 C CNN
+F 3 "~" H 6900 4600 50  0001 C CNN
+	1    6900 4600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5E93B25F
+P 7200 4550
+F 0 "R2" H 7270 4596 50  0000 L CNN
+F 1 "4k7" H 7270 4505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7130 4550 50  0001 C CNN
+F 3 "~" H 7200 4550 50  0001 C CNN
+	1    7200 4550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5E953AE5
+P 4900 1600
+F 0 "C3" H 4600 1700 50  0000 L CNN
+F 1 "47uF" H 4600 1600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4938 1450 50  0001 C CNN
+F 3 "~" H 4900 1600 50  0001 C CNN
+	1    4900 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5E943940
+P 4750 4600
+F 0 "R1" H 4600 4550 50  0000 C CNN
+F 1 "4k7" H 4600 4650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4680 4600 50  0001 C CNN
+F 3 "~" H 4750 4600 50  0001 C CNN
+	1    4750 4600
+	1    0    0    1   
+$EndComp
+$Comp
+L ESP32~Waage:I2SSpringTerm U8
+U 1 1 5E985D48
+P 5650 4900
+F 0 "U8" V 5100 4950 50  0000 R CNN
+F 1 "I2SSpringTerm" V 5200 5150 50  0000 R CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-6_1x06_P2.54mm_Horizontal" H 5650 4900 50  0001 C CNN
+F 3 "" H 5650 4900 50  0001 C CNN
+	1    5650 4900
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5EA09BE3
+P 5900 1200
+F 0 "C1" H 6015 1246 50  0000 L CNN
+F 1 "1uF" H 6015 1155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5938 1050 50  0001 C CNN
+F 3 "~" H 5900 1200 50  0001 C CNN
+	1    5900 1200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5EB56B8B
+P 2950 2350
+F 0 "C4" H 3065 2396 50  0000 L CNN
+F 1 "1uF" H 3065 2305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2988 2200 50  0001 C CNN
+F 3 "~" H 2950 2350 50  0001 C CNN
+	1    2950 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Logic_LevelTranslator:SN74LVC1T45DBV U2
+U 1 1 5EB6C02F
+P 3500 1850
+F 0 "U2" V 2800 1800 50  0000 L CNN
+F 1 "SN74LVC1T45DBV" V 2700 1550 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 3500 1400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf" H 2600 1200 50  0001 C CNN
+	1    3500 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR03
+U 1 1 5EA5B681
+P 4250 1750
+F 0 "#PWR03" H 4250 1600 50  0001 C CNN
+F 1 "+3.3V" H 4265 1923 50  0000 C CNN
+F 2 "" H 4250 1750 50  0001 C CNN
+F 3 "" H 4250 1750 50  0001 C CNN
+	1    4250 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 5EA5C2EA
+P 6950 1050
+F 0 "SW1" H 6950 1285 50  0000 C CNN
+F 1 "SW_SPST" H 6950 1194 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 6950 1050 50  0001 C CNN
+F 3 "~" H 6950 1050 50  0001 C CNN
+	1    6950 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 4500 3800 4300
+Wire Wire Line
+	3700 4500 3700 4300
+Wire Wire Line
+	3600 4500 3600 4300
+Wire Wire Line
+	3500 4500 3500 4300
+Wire Wire Line
+	3400 4500 3400 4300
+Wire Wire Line
+	3300 4500 3300 4300
+Wire Wire Line
+	5900 1050 6200 1050
+Connection ~ 5900 1050
+Connection ~ 5900 1350
+Wire Wire Line
+	5900 1350 4900 1350
+Wire Wire Line
+	4900 1750 4250 1750
+Connection ~ 4900 1750
+Wire Wire Line
+	4900 1450 4900 1350
+Connection ~ 4900 1350
+Wire Wire Line
+	4900 1350 4800 1350
+Wire Wire Line
+	3500 2250 3500 2650
+Wire Wire Line
+	4800 1350 3300 1350
+Wire Wire Line
+	3300 1350 3300 1450
+Connection ~ 4800 1350
+Wire Wire Line
+	3300 1350 2800 1350
+Wire Wire Line
+	2800 1350 2800 1850
+Connection ~ 3300 1350
+Wire Wire Line
+	3100 1850 2800 1850
+Connection ~ 2800 1850
+Wire Wire Line
+	2800 1850 2800 2350
+Wire Wire Line
+	3400 2650 3400 2550
+Wire Wire Line
+	3400 2550 2800 2550
+Connection ~ 2800 2550
+Wire Wire Line
+	2800 2550 2800 4400
+Wire Wire Line
+	3900 1950 4000 1950
+Wire Wire Line
+	4000 1950 4000 1050
+Wire Wire Line
+	4000 1050 5900 1050
+Connection ~ 6200 1050
+Connection ~ 4250 1750
+Wire Wire Line
+	4250 1750 3900 1750
+Wire Wire Line
+	4000 1950 4000 2350
+Connection ~ 4000 1950
+Wire Wire Line
+	4000 2350 3700 2350
+NoConn ~ 6750 3800
+NoConn ~ 6850 3800
+Wire Wire Line
+	5500 4850 5500 4750
+Wire Wire Line
+	5600 4850 5600 4750
+Wire Wire Line
+	5600 4750 5500 4750
+Connection ~ 5500 4750
+Wire Wire Line
+	5500 4750 5500 4300
+Wire Wire Line
+	5150 4850 5150 4450
+Wire Wire Line
+	5050 4850 5050 4750
+Wire Wire Line
+	5500 4300 4950 4300
+Wire Wire Line
+	4750 4450 5150 4450
+Connection ~ 5150 4450
+Wire Wire Line
+	5150 4450 5150 4150
+Wire Wire Line
+	4750 4750 5050 4750
+Connection ~ 5050 4750
+Wire Wire Line
+	5050 3650 5400 3650
+Wire Wire Line
+	4100 3550 5300 3550
+Wire Wire Line
+	3600 2650 3600 2550
+Wire Wire Line
+	3600 2550 4100 2550
+Wire Wire Line
+	4100 2550 4100 3550
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5EAD9F11
+P 5200 1600
+F 0 "TP1" H 5150 1800 50  0000 L CNN
+F 1 "TestPoint" H 5258 1627 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 5400 1600 50  0001 C CNN
+F 3 "~" H 5400 1600 50  0001 C CNN
+	1    5200 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP12
+U 1 1 5EAD7110
+P 5000 3000
+F 0 "TP12" H 5100 3250 50  0000 R CNN
+F 1 "TestPoint" H 4942 3117 50  0001 R CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 5200 3000 50  0001 C CNN
+F 3 "~" H 5200 3000 50  0001 C CNN
+	1    5000 3000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4800 1350 4800 1800
+Wire Wire Line
+	5900 1350 5900 1800
+Wire Wire Line
+	6200 1800 6200 1050
+$Comp
+L Connector:TestPoint TP9
+U 1 1 5EADA85A
+P 5700 1800
+F 0 "TP9" H 5650 2000 50  0000 L CNN
+F 1 "TestPoint" H 5758 1827 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 5900 1800 50  0001 C CNN
+F 3 "~" H 5900 1800 50  0001 C CNN
+	1    5700 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5EA5CEC5
+P 6100 1650
+F 0 "TP5" H 6050 1850 50  0000 L CNN
+F 1 "TestPoint" H 7750 1700 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 6300 1650 50  0001 C CNN
+F 3 "~" H 6300 1650 50  0001 C CNN
+	1    6100 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 1800 4900 1750
+$Comp
+L Connector:TestPoint TP15
+U 1 1 5EAD8DA3
+P 4900 3200
+F 0 "TP15" H 5000 3450 50  0000 R CNN
+F 1 "TestPoint" H 4842 3317 50  0001 R CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 5100 3200 50  0001 C CNN
+F 3 "~" H 5100 3200 50  0001 C CNN
+	1    4900 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP11
+U 1 1 5EADAB73
+P 4800 3000
+F 0 "TP11" H 4900 3250 50  0000 R CNN
+F 1 "TestPoint" H 4742 3117 50  0001 R CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 5000 3000 50  0001 C CNN
+F 3 "~" H 5000 3000 50  0001 C CNN
+	1    4800 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP13
+U 1 1 5EADD49A
+P 5200 3000
+F 0 "TP13" H 5300 3250 50  0000 R CNN
+F 1 "TestPoint" H 5142 3117 50  0001 R CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 5400 3000 50  0001 C CNN
+F 3 "~" H 5400 3000 50  0001 C CNN
+	1    5200 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP16
+U 1 1 5EADC753
+P 5100 3200
+F 0 "TP16" H 5200 3450 50  0000 R CNN
+F 1 "TestPoint" H 5042 3317 50  0001 R CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 5300 3200 50  0001 C CNN
+F 3 "~" H 5300 3200 50  0001 C CNN
+	1    5100 3200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5400 3650 5400 3000
+Wire Wire Line
+	5300 3550 5300 3000
+$Comp
+L Connector:TestPoint TP17
+U 1 1 5EADDADC
+P 5600 3200
+F 0 "TP17" H 5700 3450 50  0000 R CNN
+F 1 "TestPoint" H 5542 3317 50  0001 R CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 5800 3200 50  0001 C CNN
+F 3 "~" H 5800 3200 50  0001 C CNN
+	1    5600 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP14
+U 1 1 5EADD92E
+P 5500 3000
+F 0 "TP14" H 5600 3250 50  0000 R CNN
+F 1 "TestPoint" H 5442 3117 50  0001 R CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 5700 3000 50  0001 C CNN
+F 3 "~" H 5700 3000 50  0001 C CNN
+	1    5500 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5EADA4FD
+P 5500 1800
+F 0 "TP8" H 5450 2000 50  0000 L CNN
+F 1 "TestPoint" H 5558 1827 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 5700 1800 50  0001 C CNN
+F 3 "~" H 5700 1800 50  0001 C CNN
+	1    5500 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5EADA0E7
+P 5300 1800
+F 0 "TP7" H 5250 2000 50  0000 L CNN
+F 1 "TestPoint" H 5358 1827 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 5500 1800 50  0001 C CNN
+F 3 "~" H 5500 1800 50  0001 C CNN
+	1    5300 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5EADA96F
+P 5800 1600
+F 0 "TP4" H 5750 1800 50  0000 L CNN
+F 1 "TestPoint" H 7850 1400 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 6000 1600 50  0001 C CNN
+F 3 "~" H 6000 1600 50  0001 C CNN
+	1    5800 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5EADA319
+P 5400 1600
+F 0 "TP2" H 5350 1800 50  0000 L CNN
+F 1 "TestPoint" H 5458 1627 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 5600 1600 50  0001 C CNN
+F 3 "~" H 5600 1600 50  0001 C CNN
+	1    5400 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5EADA63D
+P 5600 1600
+F 0 "TP3" H 5550 1800 50  0000 L CNN
+F 1 "TestPoint" H 5658 1627 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 5800 1600 50  0001 C CNN
+F 3 "~" H 5800 1600 50  0001 C CNN
+	1    5600 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP10
+U 1 1 5EADAA71
+P 6000 1800
+F 0 "TP10" H 5900 2000 50  0000 L CNN
+F 1 "TestPoint" H 7800 1750 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 6200 1800 50  0001 C CNN
+F 3 "~" H 6200 1800 50  0001 C CNN
+	1    6000 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5EAD9C35
+P 5100 1800
+F 0 "TP6" H 5050 2000 50  0000 L CNN
+F 1 "TestPoint" H 5158 1827 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 5300 1800 50  0001 C CNN
+F 3 "~" H 5300 1800 50  0001 C CNN
+	1    5100 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 1600 5200 1800
+Wire Wire Line
+	5400 1600 5400 1800
+Wire Wire Line
+	5600 1600 5600 1800
+Wire Wire Line
+	5800 1600 5800 1800
+Wire Wire Line
+	6100 1650 6100 1800
+$Comp
+L Device:C C5
+U 1 1 5E9FF11E
+P 7550 4400
+F 0 "C5" H 7665 4446 50  0000 L CNN
+F 1 "1uF" H 7665 4355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7588 4250 50  0001 C CNN
+F 3 "~" H 7550 4400 50  0001 C CNN
+	1    7550 4400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L ESP32~Waage:ESP32WROVERSocket U3
 U 1 1 5E982BFB
 P 5550 2400
-F 0 "U2" V 5600 2550 50  0000 R CNN
+F 0 "U3" V 5600 2550 50  0000 R CNN
 F 1 "ESP32WROVERSocket" V 5400 2800 50  0000 R CNN
 F 2 "ESP32 Waage:TTGO_T8_Socket" H 5550 2400 50  0001 C CNN
 F 3 "" H 5550 2400 50  0001 C CNN
 	1    5550 2400
 	0    -1   -1   0   
 $EndComp
-$Comp
-L ESP32~Waage:SupplSpringTerm U4
-U 1 1 5E9C944D
-P 7900 3650
-F 0 "U4" H 7532 3619 50  0000 R CNN
-F 1 "SupplSpringTerm" H 7532 3710 50  0000 R CNN
-F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-2_1x02_P2.54mm_Horizontal" H 7900 3650 50  0001 C CNN
-F 3 "" H 7900 3650 50  0001 C CNN
-	1    7900 3650
-	-1   0    0    1   
-$EndComp
-$Comp
-L ESP32~Waage:HX711SpringTerm U6
-U 1 1 5E9C9F52
-P 7900 5450
-F 0 "U6" H 7532 5511 50  0000 R CNN
-F 1 "HX711SpringTerm" H 7532 5420 50  0000 R CNN
-F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-7_1x07_P2.54mm_Horizontal" H 7850 5450 50  0001 C CNN
-F 3 "" H 7850 5450 50  0001 C CNN
-	1    7900 5450
-	-1   0    0    -1  
-$EndComp
-$Comp
-L ESP32~Waage:DS18B20SpringTerm U5
-U 1 1 5E9CAE31
-P 7900 4350
-F 0 "U5" H 7481 4411 50  0000 R CNN
-F 1 "DS18B20SpringTerm" H 7481 4320 50  0000 R CNN
-F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-3_1x03_P2.54mm_Horizontal" H 7900 4350 50  0001 C CNN
-F 3 "" H 7900 4350 50  0001 C CNN
-	1    7900 4350
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
-	6600 5150 7900 5150
+	5050 3650 5050 4750
 Wire Wire Line
-	7900 5250 6600 5250
+	4900 3000 4900 3200
 Wire Wire Line
-	6600 5350 7900 5350
+	5100 3000 5100 3200
 Wire Wire Line
-	7900 5450 6600 5450
+	5600 3000 5600 3200
 Wire Wire Line
-	6600 5550 6750 5550
+	5700 3000 5700 4850
 Wire Wire Line
-	7900 5650 6600 5650
+	5800 3000 5800 4850
 Wire Wire Line
-	7800 1800 6200 1800
+	5900 3000 5900 4850
 Wire Wire Line
-	7900 6150 7900 5750
+	4250 1750 4250 4150
+Connection ~ 2800 2350
 Wire Wire Line
-	7900 4450 7900 4750
+	2800 2350 2800 2550
 Wire Wire Line
-	7900 4750 9200 4750
+	3100 2350 3700 2350
+Connection ~ 3700 2350
 Wire Wire Line
-	9200 4750 9200 6150
+	3700 2350 3700 2650
 Wire Wire Line
-	9200 6150 7900 6150
-Connection ~ 7900 6150
+	2800 4400 3200 4400
 Wire Wire Line
-	7800 3900 9200 3900
-Wire Wire Line
-	9200 3900 9200 4750
-Connection ~ 9200 4750
-Wire Wire Line
-	4950 5550 4950 6150
-Connection ~ 4950 6150
+	3200 4400 3200 4500
 Wire Wire Line
 	6200 3000 6200 3100
 Wire Wire Line
-	2050 4250 2200 4250
+	6200 3100 7100 3100
 Wire Wire Line
-	2200 4250 2200 3550
+	3500 1450 3500 1250
 Wire Wire Line
-	4900 1500 4900 1800
+	3500 1250 5000 1250
 Wire Wire Line
-	4800 1800 4800 1150
+	5000 1250 5000 1800
+Connection ~ 6550 1350
 Wire Wire Line
-	4800 1150 5900 1150
+	6550 1350 7100 1350
 Wire Wire Line
-	5900 1150 5900 1800
+	5900 1350 6550 1350
 Wire Wire Line
-	5900 1150 6200 1150
-Connection ~ 5900 1150
-Connection ~ 2200 4250
+	6200 1050 6550 1050
 Wire Wire Line
-	7900 4450 7800 4450
-Connection ~ 7900 4450
+	6550 1050 6750 1050
+Connection ~ 6550 1050
+Connection ~ 4000 1050
 Wire Wire Line
-	7900 4350 6100 4350
+	4950 4850 4950 4300
 Wire Wire Line
-	6100 4350 6100 3000
-NoConn ~ 2050 3850
-NoConn ~ 2050 3750
+	7100 1350 7100 3100
+Wire Wire Line
+	7350 1150 7100 1150
+Wire Wire Line
+	7100 1150 7100 1350
+Connection ~ 7100 1350
 $Comp
-L Device:C C1
-U 1 1 5E9376D9
-P 6950 3750
-F 0 "C1" H 7065 3796 50  0000 L CNN
-F 1 "47uF" H 7065 3705 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H 6988 3600 50  0001 C CNN
-F 3 "~" H 6950 3750 50  0001 C CNN
-	1    6950 3750
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 5E93A593
-P 2350 3550
-F 0 "R2" H 2420 3596 50  0000 L CNN
-F 1 "4k7" H 2420 3505 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2280 3550 50  0001 C CNN
-F 3 "~" H 2350 3550 50  0001 C CNN
-	1    2350 3550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R1
-U 1 1 5E93B25F
-P 2350 3250
-F 0 "R1" H 2420 3296 50  0000 L CNN
-F 1 "4k7" H 2420 3205 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2280 3250 50  0001 C CNN
-F 3 "~" H 2350 3250 50  0001 C CNN
-	1    2350 3250
+L ESP32~Waage:I2CSpringTerm U9
+U 1 1 5EA7D265
+P 6500 4950
+F 0 "U9" V 5900 5000 50  0000 R CNN
+F 1 "I2CSpringTerm" V 6000 5150 50  0000 R CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-4_1x04_P2.54mm_Horizontal" H 6500 4950 50  0001 C CNN
+F 3 "" H 6500 4950 50  0001 C CNN
+	1    6500 4950
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4950 5250 4950 4650
+	6350 4850 6350 4800
 Wire Wire Line
-	4950 4650 7350 4650
+	6450 4850 6450 4300
 Wire Wire Line
-	7350 4650 7350 3400
+	6550 4850 6550 4400
 Wire Wire Line
-	7350 3400 7800 3400
+	6650 4850 6650 4300
+Connection ~ 6450 4300
 Wire Wire Line
-	2050 3950 2600 3950
+	6450 4300 6450 4150
 Wire Wire Line
-	5300 3950 5300 3000
+	6200 3100 6200 4300
 Wire Wire Line
-	2050 4050 2700 4050
+	6200 4300 6450 4300
+Connection ~ 6200 3100
 Wire Wire Line
-	5400 4050 5400 3000
-Connection ~ 2200 3250
+	7550 4800 7200 4800
+Connection ~ 6350 4800
 Wire Wire Line
-	2200 3250 2200 1500
-Connection ~ 2200 3550
+	6350 4800 6350 4150
+Connection ~ 6550 4400
 Wire Wire Line
-	2200 3550 2200 3250
+	6550 4400 6550 4050
+Connection ~ 6650 4300
 Wire Wire Line
-	2500 3550 2600 3550
+	6650 4300 6650 3950
 Wire Wire Line
-	2600 3550 2600 3950
-Connection ~ 2600 3950
+	7150 1050 7350 1050
 Wire Wire Line
-	2500 3250 2700 3250
+	5500 4300 6200 4300
+Connection ~ 5500 4300
+Connection ~ 6200 4300
 Wire Wire Line
-	2700 3250 2700 4050
-Connection ~ 2700 4050
+	4250 4150 5150 4150
+Connection ~ 6350 4150
+Connection ~ 5150 4150
 Wire Wire Line
-	6750 5550 6750 6150
+	5150 4150 5400 4150
 Wire Wire Line
-	4950 6150 6750 6150
-Connection ~ 6750 5550
+	5400 4850 5400 4150
+Connection ~ 5400 4150
 Wire Wire Line
-	6750 5550 7900 5550
-Connection ~ 6750 6150
+	5400 4150 6350 4150
 Wire Wire Line
-	6750 6150 7900 6150
-$Comp
-L Device:C C2
-U 1 1 5E953AE5
-P 4450 1350
-F 0 "C2" H 4565 1396 50  0000 L CNN
-F 1 "47uF" H 4565 1305 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H 4488 1200 50  0001 C CNN
-F 3 "~" H 4450 1350 50  0001 C CNN
-	1    4450 1350
-	1    0    0    -1  
-$EndComp
+	7550 4800 7550 4550
 Wire Wire Line
-	7500 4250 7900 4250
-Connection ~ 7800 4450
+	7200 4700 7200 4800
+Connection ~ 7200 4800
 Wire Wire Line
-	7800 4450 7200 4450
-$Comp
-L Device:R R3
-U 1 1 5E943940
-P 7650 4750
-F 0 "R3" V 7443 4750 50  0000 C CNN
-F 1 "4k7" V 7534 4750 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7580 4750 50  0001 C CNN
-F 3 "~" H 7650 4750 50  0001 C CNN
-	1    7650 4750
-	0    1    1    0   
-$EndComp
+	7200 4800 6900 4800
 Wire Wire Line
-	7500 4750 7500 4250
+	6900 4750 6900 4800
+Connection ~ 6900 4800
 Wire Wire Line
-	7800 4750 7800 4450
-$Comp
-L ESP32~Waage:I2SSpringTerm U7
-U 1 1 5E985D48
-P 7950 1000
-F 0 "U7" H 7582 1061 50  0000 R CNN
-F 1 "I2SSpringTerm" H 7582 970 50  0000 R CNN
-F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-3_1x03_P2.54mm_Horizontal" H 7950 1000 50  0001 C CNN
-F 3 "" H 7950 1000 50  0001 C CNN
-	1    7950 1000
-	-1   0    0    -1  
-$EndComp
+	6900 4800 6350 4800
 Wire Wire Line
-	7900 1050 7900 1150
+	6900 4400 6900 4450
 Wire Wire Line
-	7900 1250 7700 1250
-Connection ~ 7900 1150
+	6550 4400 6900 4400
 Wire Wire Line
-	5800 1800 5800 950 
+	7200 4300 7200 4400
 Wire Wire Line
-	5800 950  7900 950 
+	6650 4300 7200 4300
 Wire Wire Line
-	5700 1800 5700 850 
+	7550 4250 7550 4150
 Wire Wire Line
-	5700 850  7900 850 
+	6350 4150 6350 3800
 Wire Wire Line
-	5600 1800 5600 750 
+	7550 4150 6450 4150
+Connection ~ 6450 4150
 Wire Wire Line
-	5600 750  7900 750 
+	6450 4150 6450 3800
 Wire Wire Line
-	2300 4150 2300 4700
-Wire Wire Line
-	2200 4250 2450 4250
-Wire Wire Line
-	7800 3900 7800 3700
-Wire Wire Line
-	7800 3700 7900 3700
-Wire Wire Line
-	7900 3600 7800 3600
-Wire Wire Line
-	7800 3600 7800 3400
-Connection ~ 7800 3400
-Wire Wire Line
-	6950 3900 7800 3900
-Connection ~ 7800 3900
-Wire Wire Line
-	6950 3600 7800 3600
-Connection ~ 7800 3600
-Connection ~ 7800 1800
-Wire Wire Line
-	7800 1800 7800 3400
-Wire Wire Line
-	7200 1150 7200 3100
-Wire Wire Line
-	6200 3100 7200 3100
-Connection ~ 7200 3100
-Wire Wire Line
-	7200 3100 7200 4450
-$Comp
-L Device:C C4
-U 1 1 5E9FF11E
-P 6200 1450
-F 0 "C4" H 6315 1496 50  0000 L CNN
-F 1 "1uF" H 6315 1405 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H 6238 1300 50  0001 C CNN
-F 3 "~" H 6200 1450 50  0001 C CNN
-	1    6200 1450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6200 1300 6200 1150
-Connection ~ 6200 1150
-Wire Wire Line
-	6200 1150 7200 1150
-Wire Wire Line
-	6200 1600 6200 1800
-Connection ~ 6200 1800
-$Comp
-L Device:C C3
-U 1 1 5EA09BE3
-P 2450 4550
-F 0 "C3" H 2565 4596 50  0000 L CNN
-F 1 "1uF" H 2565 4505 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H 2488 4400 50  0001 C CNN
-F 3 "~" H 2450 4550 50  0001 C CNN
-	1    2450 4550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2050 4150 2300 4150
-Wire Wire Line
-	2450 4700 2300 4700
-Connection ~ 2300 4700
-Wire Wire Line
-	2450 4400 2450 4250
-Connection ~ 2450 4250
-Wire Wire Line
-	2600 3950 3350 3950
-Wire Wire Line
-	2700 4050 3550 4050
-Connection ~ 7500 4250
-Wire Wire Line
-	2200 1500 4450 1500
-Wire Wire Line
-	2300 4700 2300 6150
-Wire Wire Line
-	5600 3000 5600 4550
-Wire Wire Line
-	5500 3000 5500 4450
-$Comp
-L Mechanical:MountingHole_Pad H1
-U 1 1 5EAD8994
-P 3350 3450
-F 0 "H1" H 3300 3650 50  0000 L CNN
-F 1 "SDA" H 3300 3750 50  0000 L CNN
-F 2 "" H 3350 3450 50  0001 C CNN
-F 3 "~" H 3350 3450 50  0001 C CNN
-	1    3350 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H2
-U 1 1 5EADACD1
-P 3550 3450
-F 0 "H2" H 3500 3650 50  0000 L CNN
-F 1 "SDC" H 3500 3750 50  0000 L CNN
-F 2 "" H 3550 3450 50  0001 C CNN
-F 3 "~" H 3550 3450 50  0001 C CNN
-	1    3550 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H3
-U 1 1 5EADBA3C
-P 3750 3450
-F 0 "H3" H 3700 3650 50  0000 L CNN
-F 1 "VCC" H 3700 3750 50  0000 L CNN
-F 2 "" H 3750 3450 50  0001 C CNN
-F 3 "~" H 3750 3450 50  0001 C CNN
-	1    3750 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H4
-U 1 1 5EADBC2D
-P 3950 3450
-F 0 "H4" H 3900 3650 50  0000 L CNN
-F 1 "GND" H 3900 3750 50  0000 L CNN
-F 2 "" H 3950 3450 50  0001 C CNN
-F 3 "~" H 3950 3450 50  0001 C CNN
-	1    3950 3450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2300 4150 3950 4150
-Wire Wire Line
-	3950 4150 3950 3550
-Connection ~ 2300 4150
-Wire Wire Line
-	3750 3550 3750 3850
-Connection ~ 3750 4250
-Wire Wire Line
-	3750 4250 7500 4250
-Wire Wire Line
-	3550 3550 3550 4050
-Connection ~ 3550 4050
-Wire Wire Line
-	3550 4050 5400 4050
-Wire Wire Line
-	3350 3550 3350 3950
-Connection ~ 3350 3950
-Wire Wire Line
-	3350 3950 5300 3950
-$Comp
-L Mechanical:MountingHole_Pad H5
-U 1 1 5EAED25C
-P 4800 3100
-F 0 "H5" H 4850 3300 50  0000 R CNN
-F 1 "36" H 4850 3400 50  0000 R CNN
-F 2 "" H 4800 3100 50  0001 C CNN
-F 3 "~" H 4800 3100 50  0001 C CNN
-	1    4800 3100
-	-1   0    0    1   
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H8
-U 1 1 5EAEF252
-P 5000 3100
-F 0 "H8" H 5050 3300 50  0000 R CNN
-F 1 "RST" H 5050 3400 50  0000 R CNN
-F 2 "" H 5000 3100 50  0001 C CNN
-F 3 "~" H 5000 3100 50  0001 C CNN
-	1    5000 3100
-	-1   0    0    1   
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H6
-U 1 1 5EAEF7C6
-P 4900 3500
-F 0 "H6" H 4950 3700 50  0000 R CNN
-F 1 "39" H 4950 3800 50  0000 R CNN
-F 2 "" H 4900 3500 50  0001 C CNN
-F 3 "~" H 4900 3500 50  0001 C CNN
-	1    4900 3500
-	-1   0    0    1   
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H10
-U 1 1 5EAF052D
-P 5100 3500
-F 0 "H10" H 5150 3700 50  0000 R CNN
-F 1 "34" H 5150 3800 50  0000 R CNN
-F 2 "" H 5100 3500 50  0001 C CNN
-F 3 "~" H 5100 3500 50  0001 C CNN
-	1    5100 3500
-	-1   0    0    1   
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H12
-U 1 1 5EAF0948
-P 5200 3100
-F 0 "H12" H 5250 3300 50  0000 R CNN
-F 1 "35" H 5250 3400 50  0000 R CNN
-F 2 "" H 5200 3100 50  0001 C CNN
-F 3 "~" H 5200 3100 50  0001 C CNN
-	1    5200 3100
-	-1   0    0    1   
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H16
-U 1 1 5EAF1549
-P 5700 3100
-F 0 "H16" H 5750 3300 50  0000 R CNN
-F 1 "27" H 5750 3400 50  0000 R CNN
-F 2 "" H 5700 3100 50  0001 C CNN
-F 3 "~" H 5700 3100 50  0001 C CNN
-	1    5700 3100
-	-1   0    0    1   
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H17
-U 1 1 5EAF1A3C
-P 5800 3500
-F 0 "H17" H 5850 3700 50  0000 R CNN
-F 1 "14" H 5850 3800 50  0000 R CNN
-F 2 "" H 5800 3500 50  0001 C CNN
-F 3 "~" H 5800 3500 50  0001 C CNN
-	1    5800 3500
-	-1   0    0    1   
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H18
-U 1 1 5EAF28F0
-P 5900 3100
-F 0 "H18" H 5950 3300 50  0000 R CNN
-F 1 "12" H 5950 3400 50  0000 R CNN
-F 2 "" H 5900 3100 50  0001 C CNN
-F 3 "~" H 5900 3100 50  0001 C CNN
-	1    5900 3100
-	-1   0    0    1   
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H20
-U 1 1 5EAF2D70
-P 6000 3500
-F 0 "H20" H 6050 3700 50  0000 R CNN
-F 1 "13" H 6050 3800 50  0000 R CNN
-F 2 "" H 6000 3500 50  0001 C CNN
-F 3 "~" H 6000 3500 50  0001 C CNN
-	1    6000 3500
-	-1   0    0    1   
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H21
-U 1 1 5EAF3BCA
-P 6100 1700
-F 0 "H21" H 6200 1750 50  0000 L CNN
-F 1 "4" H 6350 1750 50  0000 L CNN
-F 2 "" H 6100 1700 50  0001 C CNN
-F 3 "~" H 6100 1700 50  0001 C CNN
-	1    6100 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H19
-U 1 1 5EAF4327
-P 6000 1450
-F 0 "H19" H 5950 1650 50  0000 L CNN
-F 1 "0" H 6100 1650 50  0000 L CNN
-F 2 "" H 6000 1450 50  0001 C CNN
-F 3 "~" H 6000 1450 50  0001 C CNN
-	1    6000 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H15
-U 1 1 5EAF4BFA
-P 5500 1700
-F 0 "H15" H 5450 1900 50  0000 L CNN
-F 1 "23" H 5450 2000 50  0000 L CNN
-F 2 "" H 5500 1700 50  0001 C CNN
-F 3 "~" H 5500 1700 50  0001 C CNN
-	1    5500 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H14
-U 1 1 5EAF5204
-P 5400 1300
-F 0 "H14" H 5350 1600 50  0000 L CNN
-F 1 "19" H 5350 1700 50  0000 L CNN
-F 2 "" H 5400 1300 50  0001 C CNN
-F 3 "~" H 5400 1300 50  0001 C CNN
-	1    5400 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H13
-U 1 1 5EAF5A40
-P 5300 1700
-F 0 "H13" H 5250 1900 50  0000 L CNN
-F 1 "22" H 5250 2000 50  0000 L CNN
-F 2 "" H 5300 1700 50  0001 C CNN
-F 3 "~" H 5300 1700 50  0001 C CNN
-	1    5300 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H11
-U 1 1 5EAF6127
-P 5200 1300
-F 0 "H11" H 5150 1600 50  0000 L CNN
-F 1 "RXD" H 5150 1700 50  0000 L CNN
-F 2 "" H 5200 1300 50  0001 C CNN
-F 3 "~" H 5200 1300 50  0001 C CNN
-	1    5200 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H9
-U 1 1 5EAF6756
-P 5100 1700
-F 0 "H9" H 5050 1900 50  0000 L CNN
-F 1 "TXD" H 5050 2000 50  0000 L CNN
-F 2 "" H 5100 1700 50  0001 C CNN
-F 3 "~" H 5100 1700 50  0001 C CNN
-	1    5100 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H7
-U 1 1 5EAF6E73
-P 5000 1300
-F 0 "H7" H 4950 1600 50  0000 L CNN
-F 1 "21" H 4950 1700 50  0000 L CNN
-F 2 "" H 5000 1300 50  0001 C CNN
-F 3 "~" H 5000 1300 50  0001 C CNN
-	1    5000 1300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4900 3400 4900 3000
-Wire Wire Line
-	5100 3400 5100 3000
-Wire Wire Line
-	5800 3400 5800 3000
-Wire Wire Line
-	6000 3400 6000 3000
-Connection ~ 7200 1150
-Wire Wire Line
-	7200 1150 7900 1150
-Wire Wire Line
-	7700 1250 7700 1050
-Wire Wire Line
-	7700 1050 4900 1050
-Wire Wire Line
-	4900 1050 4900 1500
-Connection ~ 4900 1500
-Connection ~ 4450 1500
-Wire Wire Line
-	4450 1500 4900 1500
-Wire Wire Line
-	4450 1200 4450 1150
-Wire Wire Line
-	4450 1150 4800 1150
-Connection ~ 4800 1150
-Wire Wire Line
-	6000 1550 6000 1800
-Wire Wire Line
-	5400 1400 5400 1800
-Wire Wire Line
-	5200 1400 5200 1800
-Wire Wire Line
-	5000 1400 5000 1800
-$Comp
-L Device:C C5
-U 1 1 5EB56B8B
-P 4150 3700
-F 0 "C5" H 4265 3746 50  0000 L CNN
-F 1 "1uF" H 4265 3655 50  0000 L CNN
-F 2 "" H 4188 3550 50  0001 C CNN
-F 3 "~" H 4150 3700 50  0001 C CNN
-	1    4150 3700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4150 3850 3750 3850
-Connection ~ 3750 3850
-Wire Wire Line
-	3750 3850 3750 4250
-Wire Wire Line
-	4150 3550 3950 3550
-Connection ~ 3950 3550
-Wire Wire Line
-	2450 4250 3750 4250
-Wire Wire Line
-	2300 6150 3300 6150
-Wire Wire Line
-	5600 4550 4850 4550
-Wire Wire Line
-	4850 4550 4850 5350
-Wire Wire Line
-	4850 5350 4950 5350
-$Comp
-L Logic_LevelTranslator:SN74LVC1T45DBV U8
-U 1 1 5EB6C02F
-P 3850 5750
-F 0 "U8" H 3750 5200 50  0000 L CNN
-F 1 "SN74LVC1T45DBV" H 3550 5100 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 3850 5300 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf" H 2950 5100 50  0001 C CNN
-	1    3850 5750
-	1    0    0    -1  
-$EndComp
-Connection ~ 3850 6150
-Wire Wire Line
-	3850 6150 4950 6150
-Wire Wire Line
-	3450 5950 3300 5950
-Wire Wire Line
-	3300 5950 3300 6150
-Connection ~ 3300 6150
-Wire Wire Line
-	3300 6150 3850 6150
-Wire Wire Line
-	4250 5750 4850 5750
-Wire Wire Line
-	4850 5750 4850 5450
-Wire Wire Line
-	4850 5450 4950 5450
-Wire Wire Line
-	4950 5250 4500 5250
-Wire Wire Line
-	3950 5250 3950 5350
-Connection ~ 4950 5250
-Wire Wire Line
-	3450 5750 3300 5750
-Wire Wire Line
-	3300 5750 3300 4450
-Wire Wire Line
-	3300 4450 5500 4450
-Wire Wire Line
-	3750 5350 3750 4250
-$Comp
-L Device:C C6
-U 1 1 5EBB8101
-P 4500 5400
-F 0 "C6" H 4615 5446 50  0000 L CNN
-F 1 "1uF" H 4615 5355 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H 4538 5250 50  0001 C CNN
-F 3 "~" H 4500 5400 50  0001 C CNN
-	1    4500 5400
-	1    0    0    -1  
-$EndComp
-Connection ~ 4500 5250
-Wire Wire Line
-	4500 5250 3950 5250
-Wire Wire Line
-	4500 5550 4950 5550
-Connection ~ 4950 5550
+	6550 4050 6000 4050
+Wire Wire Line
+	6000 4050 6000 3000
+Connection ~ 6550 4050
+Wire Wire Line
+	6100 3000 6100 3950
+Wire Wire Line
+	6550 3800 6550 4050
+Wire Wire Line
+	6100 3950 6650 3950
+Connection ~ 6650 3950
+Wire Wire Line
+	6650 3950 6650 3800
 $EndSCHEMATC
