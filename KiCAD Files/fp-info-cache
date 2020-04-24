@@ -1,4 +1,4 @@
-16944243869988282
+16952184065127471
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -46101,6 +46101,41 @@ HX711_Socket
 0
 10
 10
+ESP32 Waage
+PhoenixContact_FFKDSA1V_508
+
+
+0
+2
+2
+ESP32 Waage
+PhoenixContact_FFKDSV_254_2_pol
+
+
+0
+4
+4
+ESP32 Waage
+PhoenixContact_FFKDSV_254_3_pol
+
+
+0
+6
+6
+ESP32 Waage
+PhoenixContact_FFKDSV_254_6_pol
+
+
+0
+12
+12
+ESP32 Waage
+PhoenixContact_FFKDSV_254_7_pol
+
+
+0
+14
+14
 ESP32 Waage
 TTGO_T8_Socket
 

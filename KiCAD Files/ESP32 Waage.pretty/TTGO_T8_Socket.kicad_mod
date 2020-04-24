@@ -1,4 +1,4 @@
-(module TTGO_T8_Socket (layer F.Cu) (tedit 5E949B3D)
+(module TTGO_T8_Socket (layer F.Cu) (tedit 5EA1B4F9)
   (fp_text reference REF** (at 0 3.81) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -81,4 +81,9 @@
   (pad 21 thru_hole oval (at 11.43 -12.7) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask))
   (pad 3V3 thru_hole oval (at 11.43 -15.24) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask))
   (pad GND thru_hole rect (at 11.43 -17.78) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask))
+  (model "${KIPRJMOD}/ESP32 Waage.pretty/TTGO_T8_Socket.stp"
+    (offset (xyz 0 -17.8 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )
